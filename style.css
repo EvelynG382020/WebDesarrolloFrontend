@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background-color: rgb(180, 173, 173);
+}
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 600px 200px;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-gap: 5px;
+}
+.gridContainerSales, .gridContainerRent{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 900px 200px;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-gap: 5px;
+}
+.gridContainerContact{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 500px 200px;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-gap: 5px;
+}
+header{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  background-color: rgb(105, 56, 105); 
+}
+.headerFlex{
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.headerFlex img{
+  width: 5rem;
+  justify-content: flex-start;
+  padding-right: 20px;
+}
+.headerFlex img:hover{
+  width: 7rem;
+}
+.headerFlex ul{ 
+  list-style: none;
+  font-size: 15px;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+.headerFlex li{
+  display: inline;
+  padding: 0px 10px 10px;
+  color: white;
+}
+.liHover a:hover{
+  color:green;
+  font-size: 1.5rem;
+}
+a{
+  text-decoration: none;
+  color:white;
+  list-style: none;
+}
+h1{
+  font-size: 20px;
+  padding: 20px;
+  /* font-weight: bold; */
+  color:white;
+  text-align: center;
+}
+h2{
+  font-size: 18px;
+  /* font-weight: bold; */
+  color:white;
+  text-align: center;
+  padding: 10px;
+}
+
+p{
+  color:rgb(39, 10, 170);
+  text-align: center;
+}
+img{
+  width: 50%;
+  height: auto; 
+}
+main{
+  grid-area: main;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+.hero-image{
+  background-image: url("images/office.jpeg");
+  padding: 20px 0px 20px 0px;
+  height: 300px;
+  border-radius: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.9;
+}
+
+.titulo-busca, .select{
+  color:white;
+  padding: 15px;
+  
+}
+.destacadas{
+  font-size: 20px;
+  padding: 25px;
+  text-align: center;
+  color:white;
+ 
+}
+
+.formContact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem; 
+}
+.formContact form{
+  flex-direction: colum;
+  width: 12rem;
+}
+.input{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  width: 258px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.textarea, .button{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  border-radius: 25px;
+  font-size: 15px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cardIndexBusca{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem; 
+  font-size: 18px;
+ 
+}
+.cardIndexBusca form{
+  flex-direction: colum;
+  width: 30rem;
+  background-color: rgb(105, 56, 105);
+}
+select{
+  padding: 10px;
+  gap: 10px;
+}
+
+.flexContainerImg, .flexContainerIndex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 4rem;
+}
+.imgCardText:hover{
+  box-shadow: 1px 1px 3px 1px green;
+  transform: translate(5px,5px);
+}
+.imgCardIndex:hover{
+  box-shadow: 1px 1px 3px 1px green;
+  transform: translate(5px,5px);
+}
+.imgCardText, .imgCardIndex{
+  width: 12rem;
+  background-color: rgb(180, 173, 173);
+}
+.imgCardText img{
+  width: 100%;
+}
+.imgCardText a{
+  text-align: center;
+}
+.imgCardIndex img{
+  width: 100%;
+}
+.flexIframe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.cardTextSomos{
+  width: 25rem;
+  background-color: rgb(105, 56, 105); 
+  /* border-radius: 25px;
+  border: 2px solid #73AD21; */
+  
+}
+.cardTextSomos h2{
+  text-align: center;
+  font-size: 18px;
+  color:white;
+}
+.cardTextSomos p{
+  text-align: center;
+  color:white;
+}
+.cardTextSomos iframe{
+  width: 100%;
+}
+footer{
+  grid-area: footer;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  background-color: rgb(105, 56, 105);
+}
+.footer{
+  font-size: 15px;
+  font-weight: bold;
+  color:white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.footer p{
+  color: white;
+  padding: 2px;
+}
+.footer a:hover{
+  color:green;
+  font-size: 18px;
+}
+
+.imgWsp{
+  height: 60px;
+  width: 60px;
+  padding: 10px 0px 5px 0px;
+}
+
+/* mobile first*/
+
+@media screen and (max-width: 768px){
+  
+  header {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: dimgrey;
+    font-size: 15px;
+}
+  .gridContainer{
+    grid-template-rows: 100px 200px;
+    grid-template-areas: 
+    "header"
+    "main";
+  }
+  
+  .flexContainerIndex {
+    flex-wrap: wrap;
+   
+  }
+  .flexContainerIndex img{
+    width: 100%;
+  }
+  .headerFlex li{
+    font-size: 15px;
+  }
+  .cardIndexBusca{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardIndexBusca form{
+    width: 25rem;
+    flex-wrap: wrap;
+  }
+  .imgCardText{
+    width: 15rem;
+  }
+  .imgCardText img{
+    width: 100%;
+  }
+
+  .flexContainerImg{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexIframe{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardTextSomos{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer{
+    display: none;
+  }
+  .footerDisplay{
+    display: block;
+  }
+}
+
+
+
+

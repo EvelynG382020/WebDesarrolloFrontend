@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/favicon-casa.svg">
+  <title>TusPropiedades</title>
+</head>
+<body class="gridContainer">
+  <header class="headerFlex">
+    <a href="index.html"><img src="/images/favicon-casa.svg" alt="logo"></a>
+    <nav >
+      <ul class="liHover">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="views/sales.html">Venta</a></li>
+        <li><a href="views/rent.html">Arriendo</a></li>
+        <li><a href="views/about.html">Nosotros</a></li>
+        <li><a href="views/contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-image">
+      <div class="cardIndexBusca">
+        <form>
+          <p class="titulo-busca">Busca tu propiedad</p>
+          <label class="select" for="operacion">Escoge tipo de operación:</label>
+          <select id="operacion" name="operacion">
+            <option value="venta">Venta</option>
+            <option value="arriendo">Arriendo</option>
+          </select>
+          <label class="select" for="tipo-propiedad">Escoge tipo de propiedad:</label>
+          <select id="tipo-propiedad" name="tipo-propiedad">
+            <option value="casa">Casa</option>
+            <option value="depto">Departamento</option>
+            <option value="oficina">Oficina</option>
+            <option value="terreno">Terreno</option>
+            <option value="parcela">Parcela</option>
+          </select>
+          <label class="select" for="comuna">Escoge la comuna:</label>
+          <select id="comuna" name="comuna">
+            <option value="la-florida">La Florida</option>
+            <option value="las-condes">Las Condes</option>
+            <option value="vitacura">Vitacura</option>
+            <option value="santiago-centro">Santiago Centro</option>
+            <option value="peñalolen">Peñalolén</option>
+          </select>
+          <input type="submit" value="Buscar">
+        </form>
+      </div>
+    </div>
+    <h1 class="destacadas">Propiedades Destacadas</h1>
+    <div class="flexContainerIndex">
+      <div class="imgCardIndex">
+        <a href="views/rent.html"><img src="images/houses/casa-int-lujo.jpeg" alt="casa"></a>
+      </div>
+      <div class="imgCardIndex">
+       <a href="views/rent.html"><img src="images/houses/casa-antigua.jpeg" alt="casa"></a>
+      </div>
+      <div class="imgCardIndex">
+        <a href="views/sales.html"><img src="images/houses/casa-campo.jpeg" alt="casa"></a>
+      </div>
+      <div class="imgCardIndex">
+        <a href="views/sales.html"><img src="images/houses/casa-techo-rojo.jpeg" alt="casa"></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+     <!--INDICADORES ECONOMICOS ME FALTA AGREGAR-->
+    <div class="footer">
+      <a href="views/about.html"><h3>Agente Inmobiliario</h3></a>
+      <p>Evelyn Gomez Frez</p>
+      <p>Comisión 28135</p>
+      <p>+569 999 99 99</p>
+      <p>agente@gmail.com</p>
+      <a href="views/contact.html"><img class="imgWsp" src="images/whatsapp-icon.svg" alt="wsp"></a>
+    </div>
+  </footer>
+</body>
+</html>
