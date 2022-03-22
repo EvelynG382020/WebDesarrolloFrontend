@@ -84,8 +84,7 @@ a{
 h1{
   font-size: 20px;
   padding: 20px;
-  /* font-weight: bold; */
-  color:white;
+  color: white; 
   text-align: center;
 }
 h2{
@@ -130,7 +129,7 @@ main{
   font-size: 20px;
   padding: 25px;
   text-align: center;
-  color:white;
+  color:rgb(105, 56, 105);
  
 }
 
