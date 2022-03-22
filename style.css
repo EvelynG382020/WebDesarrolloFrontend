@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.google.com/specimen/Manjari#standard-styles');
 *{
   margin: 0;
   padding: 0;
@@ -6,9 +6,10 @@
 }
 
 body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Manjari', sans-serif;
   font-size: 14px;
-  background-color: rgb(180, 173, 173);
+  /* background-color: rgb(180, 173, 173); */
+  background-color:white;
 }
 .gridContainer{
   display: grid;
@@ -267,6 +268,10 @@ footer{
 /* mobile first*/
 
 @media screen and (max-width: 768px){
+
+  body{
+    background-color: black;
+  }
   
   header {
     justify-content: center;
@@ -275,7 +280,11 @@ footer{
     background-color: dimgrey;
     font-size: 15px;
 }
+  main{
+    grid-column: 1/-1;
+  }
   .gridContainer{
+    grid-column: 1/-1;
     grid-template-rows: 100px 200px;
     grid-template-areas: 
     "header"
@@ -289,16 +298,29 @@ footer{
   .flexContainerIndex img{
     width: 100%;
   }
-  .headerFlex li{
-    font-size: 15px;
+  .headerFlex{
+    grid-column: 1/-1;
   }
+  
+  .headerFlex li{
+    display: none;
+    padding: 0px 10px 10px;
+    color: white;
+    background-color: black;
+  }
+  header:hover  li{
+    display: inline;
+  }
+
   .cardIndexBusca{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
   }
   .cardIndexBusca form{
-    width: 25rem;
+    width: 20rem;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   .imgCardText{
@@ -319,12 +341,17 @@ footer{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
   }
   .cardTextSomos{
+    
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+  .gridContainerContact{
+    grid-column: 1/-1;
   }
   footer{
     display: none;
