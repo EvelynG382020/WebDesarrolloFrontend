@@ -58,11 +58,8 @@ header{
   justify-content: flex-start;
   padding-right: 20px;
   transition: width 1s;
+}
 
-}
-.headerFlex img:hover{
-  width: 7rem;
-}
 .headerFlex ul{ 
   list-style: none;
   font-size: 15px;
@@ -298,9 +295,9 @@ footer{
   .headerFlex img{
     transition: none;
   }
+  
   .flexContainerIndex {
     flex-wrap: wrap;
-   
   }
   .flexContainerIndex img{
     width: 100%;
