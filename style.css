@@ -353,6 +353,7 @@ footer{
     
   }
   .cardTextSomos{
+    width: 20rem;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
