@@ -295,6 +295,9 @@ footer{
     "main";
   }
   
+  .headerFlex img{
+    transition: none;
+  }
   .flexContainerIndex {
     flex-wrap: wrap;
    
