@@ -353,15 +353,13 @@ footer{
     
   }
   .cardTextSomos{
-    width: 20rem;
+    width: 18rem;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .gridContainerContact{
-    grid-column: 1/-1;
-  }
+ 
   footer{
     display: none;
   }
