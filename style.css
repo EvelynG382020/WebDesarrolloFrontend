@@ -284,7 +284,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: dimgrey;
-    font-size: 15px;
+    font-size: 12px;
 }
   main{
     grid-column: 1/-1;
