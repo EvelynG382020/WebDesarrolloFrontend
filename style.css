@@ -320,7 +320,10 @@ footer{
   header:hover  li{
     display: inline;
   }
-
+  .headerFlex ul{
+    font-size: 10px;
+    font-weight: none;
+  }
   .cardIndexBusca{
     justify-content: center;
     flex-direction: column;
