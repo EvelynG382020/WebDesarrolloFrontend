@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../images/favicon-casa.svg">
-  <link rel="stylesheet" href="../style.css">
-  <title>TusPropiedades</title>
-</head>
-<body class="gridContainerSales">
-  <header class="headerFlex">
-    <a href="../index.html"><img src="../images/favicon-casa.svg" alt="logo"></a>
-    <nav> 
-      <ul class="liHover">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="sales.html">Venta</a></li>
-        <li><a href="rent.html">Arriendo</a></li>
-        <li><a href="about.html">Nosotros</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tag de Viewport-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/favicon-casa.svg">
+    <title>TusPropiedades</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 56, 105);">
+      <a class="nav-brand" href="../index.html"><img src="../images/favicon-casa.svg" alt="logo" width="100" height="100"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-light">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="sales.html">Venta<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="rent.html">Arriendo<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="about.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="views/contact.html">Contacto<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main class="hero-image">
-    <h1>Galería de Propiedades en Ventas</h1>
+  <main>
+    <h1 class="text-center pt-5 p-md-5 text-secondary">Galería de Propiedades en Ventas</h1>
+    <div class="container">
+      <div class="card-deck pb-5">
+        <div class="card">
+          <img src="../images/houses/casa-ladrillo.jpeg" class="card-img-top" alt="casa-escaleras">
+          <div class="card-body">
+            <h5 class="card-title text-center">Casa La Florida</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Ver más...</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/houses/casa-int-lujo.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Ver más...</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/houses/casa-mambu.jpeg" class="card-img-top" alt="casa-escaleras">
+          <div class="card-body">
+            <h5 class="card-title text-center">Casa La Florida</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Ver más...</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-deck pb-5">
+        <div class="card">
+          <img src="../images/houses/casa-escaleras.jpeg" class="card-img-top" alt="casa-escaleras">
+          <div class="card-body">
+            <h5 class="card-title text-center">Casa La Florida</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Ver más...</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/houses/casa-escaleras.jpeg" class="card-img-top" alt="casa-escaleras">
+          <div class="card-body">
+            <h5 class="card-title text-center">Casa La Florida</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Ver más...</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../images/houses/casa-antigua.jpeg" class="card-img-top" alt="casa-escaleras">
+          <div class="card-body">
+            <h5 class="card-title text-center">Casa La Florida</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-body">
+            <a href="#" class="card-link">Ver más...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <h1>Galería de Propiedades en Ventas</h1>
     <h2>Casas</h2>
     <div class="flexContainerImg">
       <div class="imgCardText">
@@ -64,18 +148,60 @@
           <a href=""><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem sequi culpa qui iste ullam placeat quos voluptates veniam, modi facere cumque, repudiandae voluptatibus quasi. Tenetur voluptatum veniam id a molestias!</p></a>
         </div>
       </div>
-    </div> 
+    </div>  -->
   </main>
-  <footer>
-    <!--INDICADORES ECONOMICOS -->
-    <div class="footer">
-      <a href="about.html"><h3>Agente Inmobiliario</h3></a>
-      <p>Evelyn Gomez Frez</p>
-      <p>Comisión 28135</p>
-      <p>+569 999 99 99</p>
-      <p>agente@gmail.com</p>
-      <a href="contact.html"><img class="imgWsp"  src="../images/whatsapp-icon.svg" alt="wsp"></a>
+  <footer class="text-center text-lg-start text-white" style="background-color: rgb(105, 56, 105);">
+    <!-- Grid container -->
+    <div class="container p-2 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-2">
+            <a href="views/about.html"><h6 class="text-uppercase mb-4 font-weight-bold">Tus Propiedades</h6></a>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto nulla, maiores nostrum porro, aspernatur, itaque repellendus voluptatibus accusantium recusandae reiciendis nesciunt? Asperiores odio fuga veniam nobis excepturi expedita itaque?
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Servicios</h6>
+            <p>
+              <a href="sales.html" class="text-white">Ventas de Inmuebles</a>
+            </p>
+            <p>
+              <a href="rent.html" class="text-white">Arriendos de Inmuebles</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+            <a href="views/contact.html"><h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6></a>
+            <p>Agente Evelyn Gomez Frez</p>
+            <p><i class="fas fa-home mr-3"></i> Chile, Providencia 10012</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i>+569 12345678</p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Links -->
+      <hr class="my-2">
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-2">
+              © 2022 Copyright: Comisión 28135 Evelyn Gomez Frez
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

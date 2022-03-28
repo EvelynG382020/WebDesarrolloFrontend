@@ -14,7 +14,11 @@ body{
   color: #776f6f;
 
 }
-.gridContainer{
+
+.nav-item a:hover{
+  font-size: 1.3rem;
+}
+/* .gridContainer{
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 600px 200px;
@@ -69,15 +73,7 @@ header{
   padding: 0px 10px;
   font-weight: bold;
 }
-.headerFlex li{
-  display: inline;
-  padding: 0px 10px 10px;
-  color: white;
-}
-.liHover a:hover{
-  color:green;
-  font-size: 1.5rem;
-}
+
 a{
   text-decoration: none;
   color:white;
@@ -270,7 +266,7 @@ footer{
 
 /* mobile first*/
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
 
   body{
     
@@ -369,7 +365,7 @@ footer{
   .footerDisplay{
     display: block;
   }
-}
+} */ 
 
 
 
