@@ -3,56 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="images/favicon-casa.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tag de Viewport-->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../images/favicon-casa.svg">
   <title>TusPropiedades</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="gridContainer">
-  <header class="headerFlex">
-    <a href="index.html"><img src="images/favicon-casa.svg" alt="logo"></a>
-    <nav >
-      <ul class="liHover">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="views/sales.html">Venta</a></li>
-        <li><a href="views/rent.html">Arriendo</a></li>
-        <li><a href="views/about.html">Nosotros</a></li>
-        <li><a href="views/contact.html">Contacto</a></li>
-      </ul>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 56, 105);">
+      <a class="nav-brand" href="../index.html"><img src="../images/favicon-casa.svg" alt="logo" width="100" height="100"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-light">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="views/sales.html">Venta<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="views/rent.html">Arriendo<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="views/about.html">Nosotros<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="views/contact.html">Contacto<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <main>
-    <div class="hero-image">
-      <div class="cardIndexBusca">
-        <form>
-          <p class="titulo-busca">Busca tu propiedad</p>
-          <label class="select" for="operacion">Escoge tipo de operación:</label>
-          <select id="operacion" name="operacion">
-            <option value="venta">Venta</option>
-            <option value="arriendo">Arriendo</option>
-          </select>
-          <label class="select" for="tipo-propiedad">Escoge tipo de propiedad:</label>
-          <select id="tipo-propiedad" name="tipo-propiedad">
-            <option value="casa">Casa</option>
-            <option value="depto">Departamento</option>
-            <option value="oficina">Oficina</option>
-            <option value="terreno">Terreno</option>
-            <option value="parcela">Parcela</option>
-          </select>
-          <label class="select" for="comuna">Escoge la comuna:</label>
-          <select id="comuna" name="comuna">
-            <option value="la-florida">La Florida</option>
-            <option value="las-condes">Las Condes</option>
-            <option value="vitacura">Vitacura</option>
-            <option value="santiago-centro">Santiago Centro</option>
-            <option value="peñalolen">Peñalolén</option>
-          </select>
-          <input type="submit" value="Buscar">
-        </form>
+  <main class="imgFondo">
+    <!-- style="
+  background-image: url('images/office.jpeg');" -->
+    <form action="form">
+      <h1 class="text-center pt-5 p-md-5 text-secondary" >Busca tu propiedad</h1>
+      <div class="form-group p-md-3 text-center" style="background-color: rgb(105, 56, 105);">
+        <label for="exampleFormControlInput1" style="color:white">Tipo de operación: </label>
+        <select class="btn btn-secondary mr-3" id="operacion" name="operacion">
+          <option value="venta">Venta</option>
+          <option value="arriendo">Arriendo</option>
+        </select> 
+        <label for="exampleFormControlInput1"style="color:white">Tipo de inmueble: </label>
+        <select class="btn btn-secondary mr-3" id="inmueble" name="inmueble">
+          <option value="casa">Casa</option>
+          <option value="depto">Departamento</option>
+          <option value="oficina">Oficina</option>
+          <option value="terreno">Terreno</option>
+          <option value="parcela">Parcela</option>
+        </select> 
+        <label for="exampleFormControlInput1"style="color:white">Escoge comuna: </label>
+        <select class="btn btn-secondary mr-3" id="comuna" name="comuna">
+          <option value="la-florida">La Florida</option>
+          <option value="las-condes">Las Condes</option>
+          <option value="vitacura">Vitacura</option>
+          <option value="santiago-centro">Santiago Centro</option>
+          <option value="peñalolen">Peñalolén</option>
+        </select>
+        <input type="submit" class="btn btn-success" value="Buscar">
       </div>
+    </form>
+    <h1 class="text-center p-md-5 text-secondary mt-5">Propiedades Destacadas</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner pb-5">
+        <div class="carousel-item active">
+          <a href="views/rent.html"><img src="images/houses/casa-int-lujo.jpeg" class="d-block w-100" alt="casa-int-lujo"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="views/rent.html"><img src="images/houses/casa-antigua.jpeg" class="d-block w-100" alt="casa-antigua"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="views/sales.html"><img src="images/houses/casa-campo.jpeg" class="d-block w-100" alt="casa-campo"></a>
+        </div>
+        <div class="carousel-item">
+          <a href="views/sales.html"><img src="images/houses/casa-techo-rojo.jpeg" class="d-block w-100" alt="casa-techo-rojo"></a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </button>
     </div>
-      <h1 class="destacadas">Propiedades Destacadas</h1>
-    <div class="flexContainerIndex">
+    <!-- <div class="flexContainerIndex">
       <div class="imgCardIndex">
         <a href="views/rent.html"><img src="images/houses/casa-int-lujo.jpeg" alt="casa"></a>
       </div>
@@ -65,10 +111,60 @@
       <div class="imgCardIndex">
         <a href="views/sales.html"><img src="images/houses/casa-techo-rojo.jpeg" alt="casa"></a>
       </div>
-    </div>
+    </div> -->
   </main>
-  <footer>
-     <!--INDICADORES ECONOMICOS ME FALTA AGREGAR-->
+  <footer class="text-center text-lg-start text-white" style="background-color: rgb(105, 56, 105);">
+    <!-- Grid container -->
+    <div class="container p-2 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-2">
+            <a href="views/about.html"><h6 class="text-uppercase mb-4 font-weight-bold">Tus Propiedades</h6></a>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto nulla, maiores nostrum porro, aspernatur, itaque repellendus voluptatibus accusantium recusandae reiciendis nesciunt? Asperiores odio fuga veniam nobis excepturi expedita itaque?
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Servicios</h6>
+            <p>
+              <a href="views/sales.html" class="text-white">Ventas de Inmuebles</a>
+            </p>
+            <p>
+              <a href="views/rent.html" class="text-white">Arriendos de Inmuebles</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+            <a href="views/contact.html"><h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6></a>
+            <p>Agente Evelyn Gomez Frez</p>
+            <p><i class="fas fa-home mr-3"></i> Chile, Providencia 10012</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i>+569 12345678</p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Links -->
+      <hr class="my-2">
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-2">
+              © 2022 Copyright: Comisión 28135 Evelyn Gomez Frez
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <!-- <footer>
     <div class="footer">
       <a href="views/about.html"><h3>Agente Inmobiliario</h3></a>
       <p>Evelyn Gomez Frez</p>
@@ -77,6 +173,8 @@
       <p>agente@gmail.com</p>
       <a href="views/contact.html"><img class="imgWsp" src="images/whatsapp-icon.svg" alt="wsp"></a>
     </div>
-  </footer>
+  </footer> -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
