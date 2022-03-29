@@ -18,21 +18,21 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-light">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-light ul-hover">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="../index.html">Inicio<span class="sr-only"></span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href="views/sales.html">Venta<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="views/sales.html">Venta<span class="sr-only"></span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href="views/rent.html">Arriendo<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="views/rent.html">Arriendo<span class="sr-only"></span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href="views/about.html">Nosotros<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="views/about.html">Nosotros<span class="sr-only"></span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href="views/contact.html">Contacto<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="views/contact.html">Contacto<span class="sr-only"></span></a>
           </li>
         </ul>
       </div>
@@ -41,62 +41,66 @@
   <main class="imgFondo">
     <!-- style="
   background-image: url('images/office.jpeg');" -->
-    <form action="form">
-      <h1 class="text-center pt-5 p-md-5 text-secondary" >Busca tu propiedad</h1>
-      <div class="form-group p-md-3 text-center" style="background-color: rgb(105, 56, 105);">
-        <label for="exampleFormControlInput1" style="color:white">Tipo de operación: </label>
-        <select class="btn btn-secondary mr-3" id="operacion" name="operacion">
-          <option value="venta">Venta</option>
-          <option value="arriendo">Arriendo</option>
-        </select> 
-        <label for="exampleFormControlInput1"style="color:white">Tipo de inmueble: </label>
-        <select class="btn btn-secondary mr-3" id="inmueble" name="inmueble">
-          <option value="casa">Casa</option>
-          <option value="depto">Departamento</option>
-          <option value="oficina">Oficina</option>
-          <option value="terreno">Terreno</option>
-          <option value="parcela">Parcela</option>
-        </select> 
-        <label for="exampleFormControlInput1"style="color:white">Escoge comuna: </label>
-        <select class="btn btn-secondary mr-3" id="comuna" name="comuna">
-          <option value="la-florida">La Florida</option>
-          <option value="las-condes">Las Condes</option>
-          <option value="vitacura">Vitacura</option>
-          <option value="santiago-centro">Santiago Centro</option>
-          <option value="peñalolen">Peñalolén</option>
-        </select>
-        <input type="submit" class="btn btn-success" value="Buscar">
-      </div>
-    </form>
-    <h1 class="text-center p-md-5 text-secondary mt-5">Propiedades Destacadas</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner pb-5">
-        <div class="carousel-item active">
-          <a href="views/rent.html"><img src="images/houses/casa-int-lujo.jpeg" class="d-block w-100" alt="casa-int-lujo"></a>
+    <div class="container">
+      <form action="form">
+        <h1 class="text-center pt-5 p-md-5 text-secondary" >Busca tu propiedad</h1>
+        <div class="form-group p-md-3 text-center" style="background-color: rgb(105, 56, 105);">
+          <label for="exampleFormControlInput1" style="color:white">Tipo de operación: </label>
+          <select class="btn btn-secondary mr-3" id="operacion" name="operacion">
+            <option value="venta">Venta</option>
+            <option value="arriendo">Arriendo</option>
+          </select> 
+          <label for="exampleFormControlInput1"style="color:white">Tipo de inmueble: </label>
+          <select class="btn btn-secondary mr-3" id="inmueble" name="inmueble">
+            <option value="casa">Casa</option>
+            <option value="depto">Departamento</option>
+            <option value="oficina">Oficina</option>
+            <option value="terreno">Terreno</option>
+            <option value="parcela">Parcela</option>
+          </select> 
+          <label for="exampleFormControlInput1"style="color:white">Escoge comuna: </label>
+          <select class="btn btn-secondary mr-3" id="comuna" name="comuna">
+            <option value="la-florida">La Florida</option>
+            <option value="las-condes">Las Condes</option>
+            <option value="vitacura">Vitacura</option>
+            <option value="santiago-centro">Santiago Centro</option>
+            <option value="peñalolen">Peñalolén</option>
+          </select>
+          <input type="submit" class="btn btn-success" value="Buscar">
         </div>
-        <div class="carousel-item">
-          <a href="views/rent.html"><img src="images/houses/casa-antigua.jpeg" class="d-block w-100" alt="casa-antigua"></a>
+      </form>  
+    </div>
+    <div class="container">
+      <h1 class="text-center p-md-5 text-secondary mt-5">Propiedades Destacadas</h1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner pb-5">
+          <div class="carousel-item active">
+            <a href="views/rent.html"><img src="images/houses/casa-int-lujo.jpeg" class="d-block w-100" alt="casa-int-lujo"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="views/rent.html"><img src="images/houses/casa-antigua.jpeg" class="d-block w-100" alt="casa-antigua"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="views/sales.html"><img src="images/houses/casa-campo.jpeg" class="d-block w-100" alt="casa-campo"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="views/sales.html"><img src="images/houses/casa-techo-rojo.jpeg" class="d-block w-100" alt="casa-techo-rojo"></a>
+          </div>
         </div>
-        <div class="carousel-item">
-          <a href="views/sales.html"><img src="images/houses/casa-campo.jpeg" class="d-block w-100" alt="casa-campo"></a>
-        </div>
-        <div class="carousel-item">
-          <a href="views/sales.html"><img src="images/houses/casa-techo-rojo.jpeg" class="d-block w-100" alt="casa-techo-rojo"></a>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </button>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </button>
+      </div>  
     </div>
     <!-- <div class="flexContainerIndex">
       <div class="imgCardIndex">
