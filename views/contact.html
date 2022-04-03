@@ -12,69 +12,58 @@
   </head>
 <body  style="background-image: url('../images/houses/casa-campo.jpeg');">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 56, 105);">
-      <a class="nav-brand" href="../index.html"><img src="../images/favicon-casa.svg" alt="logo" width="100" height="100"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-light">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="../index.html">Inicio<span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="sales.html">Venta<span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="rent.html">Arriendo<span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="about.html">Nosotros<span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="contact.html">Contacto<span class="sr-only"></span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="has-bg-img bg-purple bg-blend-overlay">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 56, 105);">
+        <a class="nav-brand" href="../index.html"><img class="bg-img" src="../images/favicon-casa.svg" alt="logo" width="100" height="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mt-2 mt-lg-0 font-weight-light">
+            <li class="nav-item p-2 bd-highlight">
+              <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item active  p-2 bd-highlight">
+              <a class="nav-link text-white" href="sales.html">Venta</a>
+            </li>
+            <li class="nav-item active p-2 bd-highlight">
+              <a class="nav-link text-white" href="rent.html">Arriendo</a>
+            </li>
+            <li class="nav-item active p-2 bd-highlight">
+              <a class="nav-link text-white" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav-item active p-2 bd-highlight">
+              <a class="nav-link text-white" href="contact.html">Contacto</a>
+            </li>
+          </ul>       
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
-    <form>
-      <div class="container pt-5 pb-5">
-        <div class="row">
-          <div class="col-sm-6 p-3" style="background-color: rgb(128, 89, 128);">
-            <div class="card bg-light mb-3 justify-content-center">
-              <div class="form-group pl-1 pt-2" style="max-width: 25rem;">
-                <label for="exampleInputEmail1">Nombre</label>
-                <input type="name input-foc" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group pl-1 pt-2" style="max-width: 25rem;">
-                <label for="exampleInputEmail1">Dirección de email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group pl-1 pt-2" style="max-width: 25rem;">
-                <label for="exampleInputPassword1">Teléfono</label>
-                <input type="tel" class="form-control" id="exampleInputTel">
-              </div>
-              <div class="form-group pl-1 pt-2" style="max-width: 25rem;">
-                <label for="exampleInputPassword1">Mensaje</label>
-                <textarea type="mensaje" class="form-control" id="exampleInputMessage"></textarea>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-secondary">Enviar</button>
+    <div class="container mt-5">
+      <div class="card bg-secondary">
+        <div class="card-body">
+          <h5 class="card-title pb-4 text-white">Formulario de contacto</h5>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-white">Ingresa tu email</label>
+            <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com">
+            <label for="exampleFormControlInput1" class="form-label text-white">Nombre</label>
+            <input type="text" class="form-control mb-3" id="exampleFormControlInput1">
+            <label for="exampleFormControlInput1" class="form-label text-white">Telefono</label>
+            <input type="number" class="form-control mb-3" id="exampleFormControlInput1" placeholder="+569 12345678">
           </div>
-          <div class="col-sm-6">
-            <div class="card bg-light mb-3">
-              <div class="card-body" style="background-color: rgb(128, 89, 128);">
-                <img src="../images/office.jpeg" class="card-img-top" alt="casa-escaleras">
-              </div>
-            </div>
-          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>          
+          <button type="submit" class="btn-lg btn-secondary fw-bold" style="background-color: rgb(105, 56, 105);">Enviar</button>
         </div>
+        <img src="../images/office.jpeg" class="card-img-bottom" alt="office">
       </div>
-    </form>
+    </div>
   </main>
-  <footer class="text-center text-lg-start text-white" style="background-color: rgb(105, 56, 105);">
+  <footer class="text-center text-lg-start text-white mt-5" style="background-color: rgb(105, 56, 105);">
     <!-- Grid container -->
     <div class="container p-2 pb-0">
       <section class="">
@@ -123,9 +112,6 @@
       </section>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html> 
