@@ -1,0 +1,23 @@
+{
+  "name": "coder-28135",
+  "version": "1.0.0",
+  "description": "Desarrollo Frontend Webpropiedades",
+  "main": "index.js",
+  "scripts": {
+    "build": "purgecss --css sass/custom.css --content index.html sales.html rent.html about.html contact.html --output sass/reducido.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvelynG382020/WebDesarrolloFrontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvelynG382020/WebDesarrolloFrontend/issues"
+  },
+  "homepage": "https://github.com/EvelynG382020/WebDesarrolloFrontend#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
