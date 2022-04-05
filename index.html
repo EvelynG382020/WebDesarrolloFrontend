@@ -42,35 +42,35 @@
     </div>
   </header>
   <main>
-    <div class="container">
-      <h1 class="text-center pt-5 p-md-5 text-white" >Busca tu propiedad</h1> 
-      <div class="d-grid gap-2 col-4 mx-auto">
-        <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5" aria-label=".form-select-lg example" style="width: 300px;">
-          <option selected>Tipo de operación:</option>
-          <option value="1">Venta</option>
-          <option value="2">Arriendo</option>
-        </select> 
-        <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5" aria-label="Default select example" style="width: 300px;">
-          <option selected>Tipo de inmueble:</option>
-          <option value="1">Casa</option>
-          <option value="2">Departamento</option>
-          <option value="3">Terreno</option>
-          <option value="3">Parcela</option>
-        </select>
-        <select class="form-select form-select-lg btn btn-secondary fs-5" aria-label="Default select example" style="width: 300px;">
-          <option selected>Escoge Comuna:</option>
-          <option value="la-florida">La Florida</option>
-          <option value="las-condes">Las Condes</option>
-          <option value="vitacura">Vitacura</option>
-          <option value="santiago-centro">Santiago Centro</option>
-          <option value="peñalolen">Peñalolén</option>
-        </select>
+    <h1 class="text-center mt-4 p-md-5 text-white">Busca tu propiedad</h1>
+      <div class="container mt-3" style="max-width: 40rem;">
+        <div class="card bg-secondary">
+          <div class="card-body">
+            <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5" aria-label=".form-select-lg example" style="width: 300px;">
+              <option selected>Tipo de operación:</option>
+              <option value="1">Venta</option>
+              <option value="2">Arriendo</option>
+            </select>   
+            <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5" aria-label="Default select example" style="width: 300px;">
+              <option selected>Tipo de inmueble:</option>
+              <option value="1">Casa</option>
+              <option value="2">Departamento</option>
+              <option value="3">Terreno</option>
+              <option value="3">Parcela</option>
+            </select>
+            <select class="form-select form-select-lg btn btn-secondary fs-5" aria-label="Default select example" style="width: 300px;">
+              <option selected>Escoge Comuna:</option>
+              <option value="la-florida">La Florida</option>
+              <option value="las-condes">Las Condes</option>
+              <option value="vitacura">Vitacura</option>
+              <option value="santiago-centro">Santiago Centro</option>
+              <option value="peñalolen">Peñalolén</option>
+            </select>       
+          </div>
+          <input type="submit" class="btn-lg btn-secondary fw-bold mt-3 shrink" value="Buscar">  
+        </div>
       </div>
-      <div class="d-grid gap-2 col-4 mx-auto">
-        <input type="submit" class="btn-lg btn-secondary fw-bold mt-3 shrink" value="Buscar">  
-      </div>
-    </div>
-    <div class="container">
+    <div class="container" style="max-width: 70rem;">
       <h1 class="text-center p-md-5 text-white mt-5">Propiedades Destacadas</h1>
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner pb-5">
@@ -84,7 +84,7 @@
             <img src="images/houses/casa-campo.jpeg"  class="card-img-top" alt="casa-campo">
           </div>
           <div class="carousel-item">
-            <img src="images/houses/casa-techo-rojo.jpeg" class="card-img-top" alt="casa-techo-rojo">
+            <img src="images/houses/casa-techo-rojo.jpeg" class="card-img-top"  alt="casa-techo-rojo">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
