@@ -1,5 +1,5 @@
 div p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .grow:hover {
@@ -663,8 +663,8 @@ progress {
 .container-xl,
 .container-xxl {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 1rem);
+  padding-left: var(--bs-gutter-x, 1rem);
   margin-right: auto;
   margin-left: auto;
 }
@@ -700,7 +700,7 @@ progress {
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5250,7 +5250,7 @@ fieldset:disabled .btn {
 }
 
 .card-group > .card {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -6234,7 +6234,7 @@ fieldset:disabled .btn {
 }
 
 .toast-container > :not(:last-child) {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .toast-header {
