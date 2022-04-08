@@ -4,37 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Tag de Viewport-->
+  <meta name="description" content="ventas de propiedades arriendos de casas y departamentos">
+  <meta name="keywords" content="casas departamentos arriendos y ventas">
   <link rel="shortcut icon" href="images/favicon-casa.svg">
   <title>TusPropiedades</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Montserrat:ital,wght@0,300;0,600;0,700;0,900;1,100&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="sass/custom.css">
 </head>
 <body style="background-image: url('images/houses/casa-campo.jpeg');">
   <header>
     <div class="has-bg-img bg-purple bg-blend-overlay">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(105, 56, 105);">
-        <a class="nav-brand" href="index.html"><img class="bg-img grow" src="images/favicon-casa.svg" alt="logo" width="100" height="100"></a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="nav-brand" href="index.html"><img class="bg-img m-3 grow" src="images/favicon-casa.svg" alt="logo" width="70" height="70"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mt-2 mt-lg-0 font-weight-light">
-            <li class="nav-item p-2 bd-highlight">
-              <a class="nav-link active text-white color" aria-current="page" href="../index.html">Inicio</a>
+            <li class="nav-item active p-2 bd-highlight">
+              <a class="nav-link color" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item active  p-2 bd-highlight">
-              <a class="nav-link text-white color" href="views/sales.html">Venta</a>
+              <a class="nav-link color" href="views/sales.html">Venta</a>
             </li>
             <li class="nav-item active p-2 bd-highlight">
-              <a class="nav-link text-white color" href="views/rent.html">Arriendo</a>
+              <a class="nav-link color" href="views/rent.html">Arriendo</a>
             </li>
             <li class="nav-item active p-2 bd-highlight">
-              <a class="nav-link text-white color" href="views/about.html">Nosotros</a>
+              <a class="nav-link color" href="views/about.html">Nosotros</a>
             </li>
             <li class="nav-item active p-2 bd-highlight">
-              <a class="nav-link text-white color" href="views/contact.html">Contacto</a>
+              <a class="nav-link color" href="views/contact.html">Contacto</a>
             </li>
           </ul>       
         </div>
@@ -42,23 +41,23 @@
     </div>
   </header>
   <main>
-    <h1 class="text-center mt-4 p-md-5 text-white">Busca tu propiedad</h1>
+    <h1 class="text-center mt-4 p-md-5">Busca tu propiedad</h1>
       <div class="container mt-3" style="max-width: 40rem;">
         <div class="card bg-secondary">
           <div class="card-body">
-            <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5" aria-label=".form-select-lg example" style="width: 300px;">
+            <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5 text-white" aria-label=".form-select-lg example" style="width: 300px;">
               <option selected>Tipo de operación:</option>
               <option value="1">Venta</option>
               <option value="2">Arriendo</option>
             </select>   
-            <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5" aria-label="Default select example" style="width: 300px;">
+            <select class="form-select form-select-lg btn btn-secondary mb-3 fs-5 text-white" aria-label="Default select example" style="width: 300px;">
               <option selected>Tipo de inmueble:</option>
               <option value="1">Casa</option>
               <option value="2">Departamento</option>
               <option value="3">Terreno</option>
               <option value="3">Parcela</option>
             </select>
-            <select class="form-select form-select-lg btn btn-secondary fs-5" aria-label="Default select example" style="width: 300px;">
+            <select class="form-select form-select-lg btn btn-secondary fs-5 text-white" aria-label="Default select example" style="width: 300px;">
               <option selected>Escoge Comuna:</option>
               <option value="la-florida">La Florida</option>
               <option value="las-condes">Las Condes</option>
@@ -67,7 +66,7 @@
               <option value="peñalolen">Peñalolén</option>
             </select>       
           </div>
-          <input type="submit" class="btn-lg btn-secondary fw-bold mt-3 shrink" value="Buscar">  
+          <input type="submit" class="btn-lg fw-bold mt-3 shrink text-white" value="Buscar" style="background-color: rgb(105, 56, 105);">  
         </div>
       </div>
     <div class="container" style="max-width: 70rem;">
@@ -97,8 +96,8 @@
         </button>
       </div>  
     </div>
-
-  <footer class="text-center text-lg-start text-white pt-2 mt-4" style="background-color: rgb(105, 56, 105);">
+    <!-- style="background-color: rgb(105, 56, 105);" -->
+  <footer class="text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-2 pb-0">
       <!-- Section: Links -->
@@ -107,8 +106,8 @@
         <div class="row">
           <!-- Grid column -->
           <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-2">
-            <a href="views/about.html"><h6 class="text-uppercase mb-4 font-weight-bold grow">Tus Propiedades</h6></a>
-            <p class="lh-sm"">
+            <a href="views/about.html"><h6 class="text-uppercase text-black mb-4 font-weight-bold grow">Tus Propiedades</h6></a>
+            <p class="lh-sm">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi architecto nulla, maiores nostrum porro, aspernatur, itaque repellendus voluptatibus accusantium recusandae reiciendis nesciunt? Asperiores odio fuga veniam nobis excepturi expedita itaque?
             </p>
           </div>
@@ -117,16 +116,16 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
             <h6 class="text-uppercase mb-4 font-weight-bold">Servicios</h6>
             <p>
-              <a href="views/sales.html" class="text-white grow">Ventas de Inmuebles</a>
+              <a href="views/sales.html" class="text-black grow">Ventas de Inmuebles</a>
             </p>
             <p>
-              <a href="views/rent.html" class="text-white grow">Arriendos de Inmuebles</a>
+              <a href="views/rent.html" class="text-black grow">Arriendos de Inmuebles</a>
             </p>
           </div>
           <hr class="w-100 clearfix d-md-none" />
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
-            <a href="views/contact.html"><h6 class="text-uppercase mb-4 font-weight-bold grow">Contacto</h6></a>
+            <a href="views/contact.html"><h6 class="text-uppercase mb-4 text-black font-weight-bold grow">Contacto</h6></a>
             <p>Agente Evelyn Gomez Frez</p>
             <p><i class="fas fa-home mr-3"></i> Chile, Providencia 10012</p>
             <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
@@ -149,6 +148,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
