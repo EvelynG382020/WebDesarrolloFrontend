@@ -15,7 +15,7 @@ $display-font-sizes: (
 );
 
 $header-footer: white;
-$font-size: 16px;
+$font-size: 15px;
 $color-text: gray;
 $color-h1: rgb(105, 56, 105);
 
@@ -55,7 +55,7 @@ h1{
 ul{
   list-style: none;
   li{
-    padding: 15px;
+    padding: 12px;
     a{
       text-decoration: none;
       font-size: 16px;
@@ -64,7 +64,7 @@ ul{
 }
 
 li{
-  color: gray;
+  color: $color-text;
   &:hover{
     color: blueviolet;
   }
@@ -76,6 +76,12 @@ footer{
       text-decoration: none;
     }
   }
+}
+
+body{
+  background-image: url("../images/houses/casa-campo.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
