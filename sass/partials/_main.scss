@@ -1,0 +1,23 @@
+@mixin size($width, $height){
+  height: $height;
+  width: $width;
+}
+
+.size-picture{
+  @include size(100%, auto);
+}
+
+div{
+  p{
+    font-size: $font-size;
+  }
+}
+
+//USO DE MAP DECLARADO EN VARIABLE
+nav, footer{
+  background-color: map-get($colors, header-footer);
+}
+
+h1{
+  color: map-get($colors, h1);
+}

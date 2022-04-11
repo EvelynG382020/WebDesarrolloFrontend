@@ -1,0 +1,19 @@
+
+.grow:hover
+{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.color:hover
+{
+  background: rgb(105, 56, 105);
+}
+
+.shrink:hover
+{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}

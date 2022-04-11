@@ -1,0 +1,19 @@
+
+//USO DE MIXIN
+@mixin footer-link{
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.grow{
+  @include footer-link;
+  &:hover{
+    color: map-get($colors, hover);
+  }
+}
+
+
+
+

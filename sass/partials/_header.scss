@@ -1,0 +1,19 @@
+
+//USO DE MAP DECLARADO EN VARIABLES
+ul{
+  list-style: none;
+  li{
+    padding: 16px;
+    color: map-get($colors, text);
+    &:hover{
+        color: blueviolet;
+      }
+
+    a{
+      text-decoration: none;
+      font-size: 16px;
+      }
+    }
+  }
+
+

@@ -1,88 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Montserrat:ital,wght@0,300;0,600;0,700;0,900;1,100&family=Roboto+Condensed:wght@300;400;700&display=swap');
-
-
-$font-family-sans-serif: 'Lato', sans-serif;
-
-$secondary: rgb(156, 156, 161);
-
-$display-font-sizes: (
-  1: 4rem,
-  2: 4rem,
-  3: 3.5rem,
-  4: 3rem,
-  5: 2.5rem,
-  6: 2rem
-);
-
-$header-footer: white;
-$font-size: 15px;
-$color-text: gray;
-$color-h1: rgb(105, 56, 105);
-
-div{
-  p{
-    font-size: $font-size;
-  }
-}
-
-.grow:hover
-{
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-.color:hover
-{
-  background: rgb(105, 56, 105);
-}
-
-.shrink:hover
-{
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
-
-nav, footer{
-  background-color: $header-footer;
-}
-
-h1{
-  color: $color-h1;
-}
-
-ul{
-  list-style: none;
-  li{
-    padding: 12px;
-    a{
-      text-decoration: none;
-      font-size: 16px;
-    }
-  }
-}
-
-li{
-  color: $color-text;
-  &:hover{
-    color: blueviolet;
-  }
-}
-
-footer{
-  div{
-    a{
-      text-decoration: none;
-    }
-  }
-}
-
-body{
-  background-image: url("../images/houses/casa-campo.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
+@import './partials/variables';
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import './partials/header';
+@import './partials/main';
+@import './partials/body';
+@import './partials/footer';
+@import './partials/animations';
+@import './partials/mediaQuerys';
 
