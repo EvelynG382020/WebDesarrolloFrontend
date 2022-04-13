@@ -16,9 +16,17 @@ $display-font-sizes: (
 $colors: (
   text: gray,
   h1: white,
+  h2: rgb(50, 135, 226),
   h6: violet,
   header-footer: white,
   hover: blueviolet
 );
-  
+
+@mixin contact{
+  color: rgb(50, 135, 226);
+  font-size: 14;
+}
+
 $font-size: 14px;
+
+

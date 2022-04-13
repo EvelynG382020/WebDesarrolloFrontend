@@ -8,6 +8,7 @@
 :root {
   --bs-text: gray;
   --bs-h1: white;
+  --bs-h2: #3287e2;
   --bs-h6: violet;
   --bs-header-footer: white;
   --bs-hover: blueviolet;
@@ -8689,11 +8690,18 @@ ul {
 div p {
   font-size: 14px; }
 
+div label {
+  color: #3287e2; }
+
 nav, footer {
   background-color: white; }
 
 h1, .h1 {
   color: white; }
+
+h2, .h2, .color-text {
+  color: #3287e2;
+  font-size: 14; }
 
 body {
   background-image: url("../images/houses/casa-campo.jpg");
