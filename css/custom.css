@@ -8703,6 +8703,10 @@ h2, .h2, .color-text {
   color: #3287e2;
   font-size: 14; }
 
+.color-button {
+  color: #3287e2;
+  font-size: 14; }
+
 body {
   background-image: url("../images/houses/casa-campo.jpg");
   background-size: cover;

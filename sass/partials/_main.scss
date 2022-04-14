@@ -32,3 +32,8 @@ h1{
 h2, .color-text{
   @include contact;
 }
+
+.color-button{
+  @include contact;
+  
+}
