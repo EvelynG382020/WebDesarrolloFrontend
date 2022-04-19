@@ -27,6 +27,7 @@ nav, footer{
 h1{
   color: map-get($colors, h1);
   font-size: map-get($display-font-sizes, 2.5);
+  background-color: map-get($colors, back);
 }
 
 h2, .color-text{
