@@ -43,27 +43,29 @@
     </div>
   </header>
   <main>
-    <div class="container mt-5" style="max-width: 30rem;">
-      <h1 class="card-title py-3 text-center">Formulario de contacto</h1>
-      <div class="card bg-secondary">
-        <div class="card-body">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label color-text">Ingresa tu email</label>
-            <input type="email" class="form-control mb-3" id="exampleFormControlInput1" aria-required="true" placeholder="name@example.com">
-            <label for="exampleFormControlInput2" class="form-label color-text">Nombre</label>
-            <input type="text" class="form-control mb-3" id="exampleFormControlInput2" aria-required="true">
-            <label for="exampleFormControlInput3" class="form-label color-text">Telefono</label>
-            <input type="number" class="form-control mb-3" id="exampleFormControlInput3" aria-required="true" placeholder="+569 12345678">
+    <form>
+      <div class="container mt-5" style="max-width: 30rem;">
+        <h1 class="card-title py-3 text-center">Formulario de contacto</h1>
+        <div class="card bg-secondary">
+          <div class="card-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label color-text">Ingresa tu email</label>
+              <input type="email" class="form-control mb-3" id="exampleFormControlInput1" aria-required="true" placeholder="name@example.com">
+              <label for="exampleFormControlInput2" class="form-label color-text">Nombre</label>
+              <input type="text" class="form-control mb-3" id="exampleFormControlInput2" aria-required="true">
+              <label for="exampleFormControlInput3" class="form-label color-text">Telefono</label>
+              <input type="number" class="form-control mb-3" id="exampleFormControlInput3" aria-required="true" placeholder="+569 12345678">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label color-text">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>          
+            <button type="submit" class="btn-lg btn-secondary fw-bold shrink text-white" style="background-color: rgb(105, 56, 105);">Enviar</button>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label color-text">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>          
-          <button type="submit" class="btn-lg btn-secondary fw-bold shrink text-white" style="background-color: rgb(105, 56, 105);">Enviar</button>
+          <img src="../images/office1.jpg" class="card-img-bottom" alt="office">
         </div>
-        <img src="../images/office1.jpg" class="card-img-bottom" alt="office">
       </div>
-    </div>
+    </form>
   </main>
   <footer class="text-center text-lg-start mt-3">
     <!-- Grid container -->
@@ -96,7 +98,7 @@
             <p><i class="bi bi-person-lines-fill mr-3"></i> Agente Evelyn Gomez Frez</p>
             <p><i class="bi bi-house-door mr-3"></i> Chile, Providencia 10012</p>
             <p><i class="bi bi-envelope mr-3"></i> info@gmail.com</p>
-            <p><i class="bi bi-whatsapp mr-3"></i> 569 12345678</p>
+            <a href="https://wa.me/56984487732"><p><i class="bi bi-whatsapp mr-3"></i> 569 12345678</p></a>
           </div>
         </div>
       </section>
